@@ -7,6 +7,12 @@
 *.wmv
 *.m4v
 
+*.svg
+*.jpg
+*.jpeg
+
+
+
 
 *.mp3
 *.wav
