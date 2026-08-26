@@ -1,3 +1,19 @@
-echo ".mp3" >> gitignore
-echo ".mp4" >> gitignore
-echo ".env" >> gitignore 
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+*.wmv
+*.m4v
+
+
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.m4a
+*.wma
+
+
