@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors MasterClass</title>
+
+    <style>
+        /* element selector */
+        /* div {
+            background-color: red;
+        } */
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+
+
+        }
+        /* child selector */
+        div p {
+            color: blue;
+            background-color: rgb(192, 84, 133);
+        }
+        /* child selector */
+        div > p {
+            color: blue;
+            background-color: rgb(214, 0, 0);
+
+            /* universal selector */
+            * {
+                margin: 0.;
+                padding: 0;
+            }
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: green;
+        }
+        a:link {
+            color: rgb(180, 82, 7);
+        }
+        a:active {
+            background-color: rgb(115, 115, 227);
+            color: black;
+        }
+        a:hover {
+            background-color: rgb(204, 209, 65);
+            color: rgb(59, 59, 59);
+        }
+
+        a:first-child {
+            background-color: red;
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        i am div, called red clsss
+
+    </div>
+
+    <div>i am also div</div>
+
+    <span id="green">i am span</span>
+
+
+
+    <div class="red">
+
+        hellow
+        <article>
+
+            <p>i am pragrahp inside div </p>
+        </article>
+
+    </div>
+
+
+
+    
+    <a href="https://www.google.com/">go to google</a>
+    
+    <a href="https://www.facebook.com/">go to facebook</a>
+
+</body>
+
+</html>
