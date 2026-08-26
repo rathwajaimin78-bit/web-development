@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0
+    ;
+}
+
+.green {
+    background-color: rgb(40, 40, 132);
+    color: rgb(226, 111, 39);
+}
+
+.box {
+    padding: 10px;
+}
