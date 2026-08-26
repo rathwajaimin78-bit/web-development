@@ -1,0 +1,3 @@
+echo ".mp3" >> gitignore
+echo ".mp4" >> gitignore
+echo ".env" >> gitignore 
