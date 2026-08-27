@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS spcirficity & cascade</title>
+    <style>
+        /* spcifcity 1 */
+        h {
+            color: rgb(17, 0, 255);
+        }
+
+        /* spcifcity 10 */
+        .parpal {
+            color: purple;
+        }
+
+        /* spcifcity 10  now 10 + 1*/
+        h1.pink {
+            color: rgb(238, 10, 238);
+        }
+
+        /* spcifcity 10 */
+        .g {
+            color: rgb(24, 196, 158);
+        }
+
+
+        #id {
+            color: red;
+        }
+
+        /* [data-x=a] {
+           color: black;
+        } */
+
+        /* Quick Quiz */
+        /* spcifcity 1 + 10 + 10 + 10 + 10 = 41*/        
+        a.harryclass.rohan-class[href]:hover {
+            color: rgb(126, 36, 36);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1 class="parpal pink g" id="red" data-x="a">Hello Jaimin</h1>
+    </main>
+
+</body>
+
+</html>
