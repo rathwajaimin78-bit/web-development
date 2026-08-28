@@ -7,11 +7,57 @@
     <title>CSS Sizing Units</title>
 
     <style>
-        .box{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+        /* 2. pixel -  fixed value */
             border: 2px solid black;
+
+        /* 3. vh - adjust viewing hight  */
             width: 80vw;
+            height: 10vh;
+            /* auto margin make box to center */
             margin: auto;
             background-color: aqua;
+        }
+
+        .container {
+            border: 2px solid black;
+
+            width: 80vw;
+            height: 80vh;
+            /* auto margin make box to center */
+            font-size: 18px;
+            margin: 23px auto;
+            background-color: aqua;
+        }
+
+        .container >p {
+
+        /* 1. rem */
+            /* n*em give font size n times of default size */
+            /* default font size = 10px , and we give font size 2em it gives 20px font size */
+
+            /* font-size: 2em; */
+
+            /* rem give double font size of default size     */
+            height: 80vh;
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+        .vimin {
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
         }
     </style>
 </head>
@@ -19,6 +65,37 @@
 <body>
     <div class="box">
         This is box
+    </div>
+
+    <div class="container">
+       
+
+        <h1>about me :</h1>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi delectus in quia voluptas. Ipsum
+        voluptate quos reprehenderit recusandae, aut accusantium a facere officia dolore? Distinctio maiores architecto
+        qui sed quisquam officiis officia odit cum ex dolorem possimus aut unde perferendis voluptatibus vitae, iusto
+        blanditiis consequatur atque placeat saepe quas id! Porro odio earum voluptates excepturi quo ullam quas dolorum
+        impedit sequi totam commodi quis sapiente nobis temporibus eligendi eius recusandae, maxime dolorem repudiandae
+        voluptate ut deserunt fugiat hic dolor! Distinctio, maxime et. Ipsa, similique quidem. Dolorem veritatis minus
+        ut sint corporis possimus molestiae veniam ducimus unde deleniti adipisci fugit vero nihil mollitia cumque
+        doloremque laborum quos beatae dolor sit optio, amet provident! Dicta eius atque reiciendis odio officia sint
+        velit dignissimos consectetur, tenetur saepe aperiam mollitia eveniet alias officiis a. Itaque tempore quis sunt
+        ducimus quos maiores necessitatibus delectus ipsam, rerum voluptates veniam amet dolorem qui deleniti magnam
+        suscipit magni? Unde, nesciunt dolorum natus iusto minus voluptatem corporis perferendis et. Asperiores id culpa
+        dolores aliquam minus omnis. Eligendi similique aspernatur maiores deleniti deserunt cupiditate natus culpa!
+        Pariatur doloremque magnam ipsa quia, ex quas minus dolorum omnis et magni quo explicabo nam tempora ab ratione,
+        officiis totam iure facilis ducimus saepe sint perspiciatis. Voluptatibus delectus labore ullam neque veniam
+        voluptas. Beatae sunt ad non nemo temporibus error, delectus quidem, sint iusto nulla aliquid blanditiis
+        deserunt quis. Architecto optio nisi rerum officia distinctio? Ullam fugiat assumenda nostrum magnam nihil totam
+        sit temporibus maiores distinctio! Quibusdam quasi ducimus maiores nam blanditiis cumque ad libero sed non
+        magnam?</p>
+    </div>
+
+
+
+    <div class="vimin">
+        i am vimin - minimal permeter of screen
     </div>
 </body>
 
