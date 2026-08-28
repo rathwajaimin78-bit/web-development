@@ -22,6 +22,14 @@
     width: auto;
     border: solid red;
 }
+.nav_elements{
+    margin: auto;
+    display: inline-block;
+    padding: 5px;
+    height: 2hv;
+    width: auto;
+    border: solid blue;
+}
 
 .footer{
     margin: auto;
@@ -29,4 +37,13 @@
     height: 5vh;
     width: auto;
     border: solid blueviolet;
+}
+
+.header{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    height: 2hv;
+    width: auto;
 }
