@@ -37,6 +37,8 @@
     height: 5vh;
     width: auto;
     border: solid blueviolet;
+    display: flex;
+    justify-content: right;
 }
 
 .header{
