@@ -24,11 +24,12 @@
 }
 .nav_elements{
     margin: auto;
-    display: inline-block;
+    display: block;
     padding: 5px;
     height: 2hv;
     width: auto;
-    border: solid blue;
+    border: solid rgb(0, 0, 0);
+    background-color: rgb(143, 38, 175);
 }
 
 .footer{
@@ -48,4 +49,11 @@
     padding: 5px;
     height: 2hv;
     width: auto;
+}
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    background-color: rgb(143, 38, 175);
+    
+    padding: 2px;
 }
