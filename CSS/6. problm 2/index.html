@@ -14,7 +14,7 @@ is written below for your reference, don't change HTML
     <title>Document</title>
 
     <style>
-        p {
+        /* p {
             color: rgb(255, 0, 0);
             background-color: yellow;
         }
@@ -22,29 +22,35 @@ is written below for your reference, don't change HTML
         div > p {
             color: white; 
             background-color: blue; 
+        } */
+
+        p {
+           color: white; 
+            background-color: blue; 
+        }
+
+        div p:first-child {
+
+
+            color: rgb(255, 0, 0);
+            background-color: yellow;
+
         }
     </style>
 </head>
 
 <body>
 
-    <main>
-        
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum pariatur velit laborum
-                facilis neque sit eaque esse, eum officiis delectus repellat numquam voluptate totam ratione assumenda
-                temporibus consectetur repudiandae tempore!</p>
-        
-
-        <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, repellendus.</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, repellendus.</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, repellendus.</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, repellendus.</p>
-        </div>
-    </main>
+   <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
 </body>
 
 </html>
