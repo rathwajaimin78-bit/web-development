@@ -1,0 +1,163 @@
+<!-- card.png is a file which contains a card Image. Write html
+and css code to design this card. Use #html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card show</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div_g {
+            position: relative;
+            justify-self: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid black; */
+
+            height: 55%;
+            width: 94%;
+        }
+
+        .body {
+            background-color: rgb(244, 250, 255);
+        }
+
+        .main_body {
+
+            margin: auto;
+            padding: 10px;
+
+            border: 1px solid black;
+            box-shadow: 10px;
+            background-color: rgba(245, 248, 248, 0.817);
+            box-shadow: 1px 1px 20px 0px #888888;
+
+            height: 70vh;
+            width: 20vw;
+
+            border-radius: 2rem;
+
+            display: flex;
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            position: relative;
+            top: 10vh;
+
+
+
+
+        }
+
+        .img_div {
+            margin: 0;
+            padding: 0;
+
+            height: 25vh;
+            width: 60vw;
+            border-radius: 2rem;
+
+            /* tamp */
+            /* border: 1px solid black; */
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        .text_box {
+            /* clear: both; */
+            border: solid black;
+            height: 5%;
+            width: 10%;
+
+
+
+        }
+
+        .text_style {
+            font-family: system-ui;
+            font-size: x-large;
+            font-weight: 600;
+        }
+
+        .list_style {
+            margin: 10px;
+            display: inline-block;
+            justify-content: center;
+
+            padding: 5px;
+            height: auto;
+            width: 3vw;
+            border-radius: 2rem;
+
+            border: 1px solid rgba(0, 0, 0, 0.114);
+            background-color: rgb(244, 247, 253);
+        }
+
+        .long_text {
+            font-family: sans-serif;
+            font-size: medium;
+            font-weight: lighter;
+
+            overflow:auto;
+        }
+
+        .read_div {
+            margin: 10vh;
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            border-radius: 2rem;
+            width: 10vw;
+
+            background-color: rgb(226, 238, 249);
+            color: rgb(92, 143, 238);
+
+            /* temp */
+            border: 1px solid rgba(162, 228, 242, 0.509);
+
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <main class="main_body">
+
+        <div class="img_div">
+            <img src="photo.jpg" alt="lack img" class="img">
+        </div>
+        <div class="div_g">
+
+            <ul>
+                <li class="list_style"> Nature </li>
+                <li class="list_style">&nbsp;&nbsp; Lake </li>
+            </ul>
+            <div class="div_g text_style">
+                Lago di Braies
+
+
+
+                <p class="long_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nulla placeat
+                    eaque voluptas nihil officia quibusdam reprehenderit doloribus, ex quo in deserunt ullam!</p>
+
+                <div class="read_div">Read More</div>
+            </div>
+
+    </main>
+</body>
+
+</html>
