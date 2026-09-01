@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root { /* varable declration like this*/
+            --back: rgb(240, 91, 91);
+            --m_back: rgb(229, 161, 161);
+            --pad: 20px;
+            --mar: 25px;
+
+            --theme_2 : rgb(250, 198, 28) ;
+            --theme_2_m : rgba(250, 220, 122, 0.902) ;
+        }
+
+        .nav {
+            margin: var(--mar);
+            background-color: var(--back);
+
+        }
+
+        .nav_elements {
+            padding: var(--pad);
+            list-style-type: none;
+            display: inline-flex;
+
+        }
+
+        main {
+            /* --back: rgb(140, 202, 112); */ /* overiding values by using local values */
+            margin: var(--mar);
+            padding: var(--pad);
+            background-color: var(--back);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="nav_elements">Home</li>
+            <li class="nav_elements">News</li>
+            <li class="nav_elements">Updatas</li>
+            <li class="nav_elements">About</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>lorem</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae natus quisquam sed delectus, nulla culpa
+            error quas nobis. Provident, voluptatibus. Labore nobis eum officiis repellendus sint similique nisi magnam
+            saepe.</p>
+    </main>
+</body>
+
+</html>
