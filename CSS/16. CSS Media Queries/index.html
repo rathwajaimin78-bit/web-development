@@ -42,18 +42,42 @@
         }
 
         .box {
-            height: 800px;
-            width: 300px;
+            height: 150hv;
+            width: 10vw;
             background-color: gray;
             padding: 3px;
             margin: 2px;
         }
 
+        .ad_box {
+            height: 150vh;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .ad_style {
+            height: 40vh;
+            /* width: 8hv; */
+            display: flex;
+
+            border: 1px solid black;
+
+            justify-content: center;
+
+            margin: 2px;
+            padding: 2px;
+
+        }
+
         .Main {
 
             border: 1px solid black;
-            height: 800px;
-            width: 1240px;
+            height: 150vh;
+            width: 70vw;
             padding: 3px;
             margin: 5px;
         }
@@ -76,13 +100,18 @@
             background-color: rgb(143, 38, 175);
         }
 
-        @media only screen and (max-width : 500px) {
+        @media only screen and (max-width : 800px) {
             body {
                 background-color: rgb(59, 59, 211);
             }
 
             h1 {
                 color: rgb(232, 111, 111);
+            }
+
+            .ad_box {
+
+                flex-direction: column;
             }
         }
     </style>
@@ -109,6 +138,22 @@
         <main class="Main boxs">
             this is the main content
         </main>
+
+
+        <div class="ad_box">
+
+
+            <div class="ad_style">
+                ads show here
+            </div>
+            <div class="ad_style">
+                ads show here
+            </div>
+            <div class="ad_style">
+                ads show here
+            </div>
+        </div>
+
     </div>
 </body>
 
