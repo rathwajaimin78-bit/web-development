@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* you can selcet elemnt by selector like this */
+
+        /* .box:nth-child(odd){
+            background-color: aquamarine;
+            color: red;
+        } */
+        .box:nth-last-child(1){
+            background-color: rgb(217, 62, 62);
+            color: rgb(15, 48, 114);
+        }
+        .box::first-letter{
+           
+            font-size: 22px;
+         
+        }
+
+        .boxes::before{ 
+            content: "wellcome , this this some more about css selctors";
+        }
+        .boxes::after{ 
+            content: "Jamindecoded Allcopyright resvred 2026";
+            color: blueviolet;
+            background-color: azure;
+        }
+
+
+        input::placeholder{
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="boxes">
+
+        <div    class="box">
+            first div
+        </div>
+        <div    class="box">
+            2nd div
+        </div>
+        <div    class="box">
+            3rd div
+        </div>
+        <div    class="box">
+            4th div
+        </div>
+
+        <input type="text" placeholder="your name">
+    </main>
+</body>
+
+</html>
+
+<!-- and so on , ther are so many css selctors but you know with time and with practice  -->
