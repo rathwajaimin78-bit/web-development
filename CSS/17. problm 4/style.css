@@ -3,19 +3,22 @@
     padding: 0;
 }
 
-:root{
+:root {
     /* theme 1  */
-   --theme1_color :rgb(143, 38, 175);
-    --theme1_back : antiquewhite;
+    --theme1_color: rgb(143, 38, 175);
+    --theme1_back: antiquewhite;
 
     /* theme 2  */
-   --theme2_color :rgb(53 28 61);;
-    --theme2_back : #e9a03e;
+    --theme2_color: rgb(53 28 61);
+    ;
+    --theme2_back: #e9a03e;
 
     /* theme 3  */
-   --theme3_color :rgb(135 10 10);;
-    --theme3_back : #dce4e9;;
-    
+    --theme3_color: rgb(135 10 10);
+    ;
+    --theme3_back: #dce4e9;
+    ;
+
 
 }
 
@@ -27,11 +30,16 @@
     width: auto;
 
     /* border: 2px solid black; */
-    background-color: var(--theme3_color) ;
-    color: var(--theme3_back) ;
+    background-color: var(--theme3_color);
+    color: var(--theme3_back);
 
 
     display: flex;
+}
+
+ul li a {
+    color: var(--theme3_back);
+    text-decoration: none;
 }
 
 .elements {
