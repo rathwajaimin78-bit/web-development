@@ -1,0 +1,124 @@
+<!-- float -  allows show content in side  -->
+<!-- clear -  not  allows show content in side  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            margin: 0px;
+            padding: 10px;
+
+            height: 10hv;
+            width: auto;
+
+            /* border: 2px solid black; */
+            background-color: rgb(135 10 10);
+            color: #dce4e9;
+
+
+            display: flex;
+        }
+
+        .cards {
+            margin: 5px;
+            padding: 2px;
+            border: 2px solid black;
+
+            display: flow-root;
+        }
+
+        .card {
+            margin: 5px;
+            padding: 2px;
+
+            
+            border: 2px solid rgb(173, 31, 31);
+        }
+
+        .nav_elements {
+
+            margin: 10px;
+
+
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .img {
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 2rem;
+            width: 400px;
+
+
+            float: left; /*float set content position (exmple - left , right , up or down)*/
+
+
+        }
+
+        .card:nth-child(3) {
+            background-color: rgb(246, 226, 226);
+            color: gray;
+
+            /* clear both not any element/content comes right or left */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- float exmple -->
+    <nav class="nav">
+        <ul>
+            <li class="nav_elements">Home</li>
+            <li class="nav_elements">News</li>
+            <li class="nav_elements">About</li>
+            <li class="nav_elements">content us</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="cards">
+
+            <img src="https://cdn.pixabay.com/photo/2026/08/19/14/11/14-11-10-90_1280.jpg" alt="farm land" class="img">
+
+            <div class="card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus fugit minima! Quaerat quod
+                ducimus, officiis dicta doloribus quam perspiciatis mollitia ullam sit ipsam molestias repudiandae
+                adipisci est cumque consequatur qui hic distinctio vel quidem id illo ut deserunt. Quidem dolores earum
+                omnis veritatis.
+            </div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum cumque qui
+                consectetur adipisci cupiditate dicta enim aspernatur soluta quisquam minima architecto incidunt quos
+                reiciendis rem maxime maiores asperiores molestiae ab velit, laboriosam voluptates magnam. Sapiente
+                magnam obcaecati minima deleniti natus ea molestias facere in similique nisi quis facilis officia
+                praesentium, tempora, fugit fugiat accusamus laboriosam, delectus neque voluptatem sequi? Explicabo,
+                nulla exercitationem in, sapiente delectus nobis sed et eaque autem culpa repellendus aliquid id quae
+                dolore eos rerum qui neque ullam voluptatem debitis cumque adipisci corrupti. Voluptates corporis eius
+                obcaecati nostrum sequi unde consequuntur eum nulla? Eum maiores aliquid deleniti. Recusandae possimus
+                sunt magnam pariatur nemo consequuntur cupiditate quae a aliquam magni provident officiis sit quo, natus
+                fugit quos id voluptate placeat quaerat laboriosam. Nobis molestias molestiae numquam reprehenderit
+                ipsam recusandae, laudantium id accusantium expedita, autem ex excepturi corrupti officiis asperiores,
+                aliquid suscipit fuga? Dolor delectus placeat consequuntur cupiditate totam consectetur molestias eos
+                qui, modi quisquam rem beatae quasi ipsam sit aspernatur, laboriosam mollitia repellendus nihil voluptas
+                dolorum? Similique, culpa pariatur libero delectus placeat corrupti magni, quisquam ipsam, quos id quo?
+                Nisi neque reprehenderit, culpa laboriosam provident earum perspiciatis iure voluptatem, unde, quod hic?
+                Cum iure, error nobis dicta maiores qui aliquid excepturi et corporis tenetur, eos dolorem laboriosam
+                ipsam nostrum dolore, quo quas libero voluptatum dignissimos animi dolorum! Dolores, ea!</div>
+            <div class="card">card 3</div>
+        </div>
+    </main>
+
+</body>
+
+</html>
