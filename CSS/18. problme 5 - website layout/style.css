@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar styles */
+.nav {
+    margin: 0px;
+    padding: 10px;
+
+    height: 4%;
+    width: 100%;
+
+    /* border: 2px solid black; */
+    background-color: rgb(143, 38, 175);
+    color: antiquewhite;
+
+
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}   
+
+ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.elements {
+
+    margin: 10px;
+
+
+    display: inline-flex;
+    list-style: none;
+}
+
+
+/* main body styles  */
+.boxs {
+    border: 2px solid black;
+
+
+}
+
+/* this is main body styels */
+.main {
+
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 55px;
+
+
+    height: 85vh;
+    width: inherit;
+
+    background-color: rgb(231, 220, 236);
+}
+
+
+.box1 {
+    margin: 10px;
+    margin-bottom: 20px;
+
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+
+    width: 97%;
+    height: 70%;
+
+
+
+
+}
+
+.box {
+    margin: 10px;
+    padding: 2px;
+
+    display: inline-block;
+
+    height: 90%;
+    width: 55%;
+}
+
+.boxA {
+    background-color: rgb(224, 190, 240);
+    border-radius: 2rem;
+       box-shadow: 2px 9px 15px 5px #888888
+}
+
+.boxB {
+    background-color: rgb(223, 154, 76);
+    border-radius: 2rem;
+        box-shadow: 2px 9px 15px 5px #888888
+}
+
+.message {
+    margin: 20px;
+    padding: 12px;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: xxx-large;
+    font-style: italic;
+    font-family: monospace;
+    font-weight: lighter;
+
+    border-radius: 2rem;
+    width: 90vw;
+    height: 20vh;
+
+    background-color: aliceblue;
+}
+
+
+/* footer styles */
+footer {
+
+    padding: 12px;
+
+    display: flex;
+    position: relative;
+    top: 52px;
+    flex-direction: column;
+    width: inherit;
+    height: 10vh;
+    text-align: right;
+    color: whitesmoke;
+
+
+    background-color: rgb(2, 10, 24);
+
+}
+
+.icon {
+    margin: 20px;
+
+    width: 110px;
+    height: 110px;
+
+    display: inline-flex;
+    justify-self: right;
+
+    position: fixed;
+
+    border-radius: 100%;
+    z-index: 50;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    position: static;
+    z-index: inherit;
+}
