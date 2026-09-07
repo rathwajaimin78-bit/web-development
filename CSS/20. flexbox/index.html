@@ -1,0 +1,112 @@
+<!-- flex box mainliy use in outer container -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox master class</title>
+    <style>
+        .container {
+            margin: 12px;
+            padding: 12px;
+
+            border: 2px solid black;
+
+            height: 80vh;
+
+            display: flex;
+            /* justify-content: center; */
+
+            /* flex-direction use for arrange elements  */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+
+
+            /* flex-wrap: wrap; */
+            /* hlep to show content in efficient way */
+            align-content: center;
+            /* use for multipal line contents */
+
+
+            /* gap use for give custom space bettwen elemnts */
+            /* gap: 10px; */
+            row-gap: 12px;
+            column-gap: 5px;
+            /*samething we can write as gap <row gap value> <column gap value>*/
+        }
+
+        .item {
+            border: 2px solid blueviolet;
+            /* margin: 5px; */
+            /* padding: 3px; */
+
+            height: 10vh;
+            width: 10vh;
+
+            display: flex;
+
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+
+            /* 2. flex grow  */
+            flex-grow: 1;
+
+            flex-shrink: 2;
+
+
+        }
+
+        .item_1 {
+            flex-grow: 2;
+        }
+
+        /* item flexbox property*/
+        /* 1. order  */
+        .oreder_1 {
+
+            order: 1;
+        }
+
+        .oreder_20 {
+            order: 20;
+        }
+
+        .oreder_2 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="flexbox">
+            <div class="container">
+                <div class="item ">1</div>
+                <div class="item ">2</div>
+                <div class="item ">3</div>
+                <div class="item ">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+                <div class="item ">20</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

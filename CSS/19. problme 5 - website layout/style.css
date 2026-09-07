@@ -31,12 +31,16 @@ ul li a {
 .elements {
 
     margin: 10px;
+    height: inherit;
 
 
     display: inline-flex;
     list-style: none;
 }
 
+a:hover{
+    background-color: rgb(99, 26, 121);
+}
 
 /* main body styles  */
 .boxs {
