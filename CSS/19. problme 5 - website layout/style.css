@@ -157,8 +157,9 @@ footer {
 
     display: inline-flex;
     justify-self: right;
-
+    
     position: fixed;
+    right: 10px;
 
     border-radius: 100%;
     z-index: 50;
