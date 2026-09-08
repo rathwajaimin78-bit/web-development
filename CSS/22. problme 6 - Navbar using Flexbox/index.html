@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin: 60px;
+            padding: 10px;
+            width: 85%;
+            height: 8hv;
+
+            display: flex;
+            justify-self: center;
+            /* justify-items:right; */
+        }
+
+        .navbar_list {
+
+            padding: 10px;
+            list-style: none;
+            width: auto;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        .boder {
+            border: 2px solid black;
+        }
+
+        .list_elemtns {
+            display: flex;
+            gap: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar boder">
+            <ul class="navbar_list boder">
+                <li class="list_elemtns">Products</li>
+                <li class="list_elemtns">Pircing</li>
+                <li class="list_elemtns">Resources</li>
+                <li class="list_elemtns">About us</li>
+
+                <li class="list_elemtns">language </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
