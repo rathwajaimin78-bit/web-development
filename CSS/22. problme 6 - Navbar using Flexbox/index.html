@@ -15,22 +15,30 @@
         .navbar {
             margin: 60px;
             padding: 10px;
-            width: 85%;
-            height: 8hv;
+            width: 80%;
+            height: 8vh;
 
             display: flex;
             justify-self: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
             /* justify-items:right; */
         }
 
         .navbar_list {
 
             padding: 10px;
+            margin-right: 50px;
             list-style: none;
             width: auto;
 
             display: flex;
             align-items: center;
+            justify-items: center;
+
+
 
         }
 
@@ -40,7 +48,56 @@
 
         .list_elemtns {
             display: flex;
-            gap: 5px;
+            margin: 10px;
+            align-self: flex-end;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .imgbox {
+            display: flex;
+            margin: 20px;
+
+
+            width: 10%;
+            height: inherit;
+        }
+
+        .imgbox2 {
+            display: flex;
+            
+            margin: 20px;
+
+            height: 6vh;
+            width: 16vh;
+
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .language_icon {
+            width: 4vh;
+            height: 3vh;
+        }
+
+        .downloadbox {
+            margin: 20px;
+
+            height: 40vh;
+            width: 70%;
+
+            display: flex;
+            justify-content: center;
+            justify-self: center;
 
         }
     </style>
@@ -51,16 +108,35 @@
 
     <header>
         <nav class="navbar boder">
-            <ul class="navbar_list boder">
-                <li class="list_elemtns">Products</li>
-                <li class="list_elemtns">Pircing</li>
-                <li class="list_elemtns">Resources</li>
-                <li class="list_elemtns">About us</li>
 
-                <li class="list_elemtns">language </li>
+            <div class="imgbox">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Logo_full_Black_Trans_High_Res.png"
+                    alt="ultraedit img" class="img">
+            </div>
+            <ul class="navbar_list boder">
+                <li class="list_elemtns boder"> <a href="/CSS/6. problem 2/">Products </a></li>
+                <li class="list_elemtns boder"><a href="/CSS/6. problem 2/">Pircing </a></li>
+                <li class="list_elemtns boder"><a href="/CSS/6. problem 2/">Resources </a></li>
+                <li class="list_elemtns boder"><a href="/CSS/6. problem 2/">About us </a></li>
+
+                <li class="list_elemtns boder"><a href="/CSS/6. problem 2/"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULr_E9h6bhajFu7WMWDTd7q6sLBiy-1XkKUVrbNlF0A&s=10"
+                            alt="language" class="img language_icon"> </a> </li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="boder downloadbox">
+            Download UltraEdit for Windows
+            <div class="imgbox2">
+
+                <img src="https://cdn.prod.website-files.com/697780e9d366dbabbe353af2/698a2e39aaafc11aa08c7c8b_G2_Awards_Badge.avif"
+                    alt="G2 containing " class="img ">
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
