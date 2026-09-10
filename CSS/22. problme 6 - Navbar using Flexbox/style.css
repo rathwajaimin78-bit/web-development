@@ -1,0 +1,155 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin: 60px;
+            padding: 10px;
+            width: 80%;
+            height: 8vh;
+
+            display: flex;
+            justify-self: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
+            /* justify-items:right; */
+            flex-wrap: wrap;
+        }
+
+        .navbar_list {
+
+            padding: 10px;
+            margin-right: 50px;
+            list-style: none;
+            width: auto;
+
+            display: flex;
+            align-items: center;
+            justify-items: center;
+
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .boder {
+            border: 2px solid black;
+        }
+
+        .list_elemtns {
+            display: flex;
+            margin: 10px;
+            align-self: flex-end;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .imgbox {
+            display: flex;
+            margin: 20px;
+
+
+            width: 10%;
+            height: inherit;
+        }
+
+        .imgbox2 {
+            display: flex;
+
+            margin: 20px;
+
+            height: 5vh;
+            width: 15vh;
+
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .language_icon {
+            width: 4vh;
+            height: 3vh;
+        }
+
+        .downloadbox {
+            margin: 20px;
+            padding: 20px;
+
+            height: 40vh;
+            width: 70%;
+
+            display: flex;
+
+            justify-self: center;
+            flex-direction: column;
+
+
+        }
+
+        .textbox {
+            width: auto;
+            height: 5vh;
+            padding: 10px;
+            display: flex;
+            /* flex-direction: ; */
+            align-self: center;
+            justify-self: center;
+        }
+
+        main {
+            display: flex;
+            align-self: center;
+
+
+            justify-content: center;
+        }
+
+        h1 {
+            display: flex;
+            justify-self: center;
+            height: 10vh;
+        }
+
+        .haedline {
+            display: flex;
+            margin: 20px;
+
+            padding: 10px;
+            height: 10vh;
+            width: 30vw;
+
+            justify-self: center;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            .read_div {
+                margin: 10vh;
+                display: flex;
+                justify-self: center;
+                justify-content: center;
+                border-radius: 2rem;
+                width: 10vw;
+
+                background-color: rgb(226, 238, 249);
+                color: rgb(92, 143, 238);
+
+                /* temp */
+                border: 1px solid rgba(162, 228, 242, 0.509);
+
+            }
+        }

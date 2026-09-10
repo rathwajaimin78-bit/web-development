@@ -5,102 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar using Flexbox </title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar {
-            margin: 60px;
-            padding: 10px;
-            width: 80%;
-            height: 8vh;
-
-            display: flex;
-            justify-self: center;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 1rem;
-            /* justify-items:right; */
-        }
-
-        .navbar_list {
-
-            padding: 10px;
-            margin-right: 50px;
-            list-style: none;
-            width: auto;
-
-            display: flex;
-            align-items: center;
-            justify-items: center;
-
-
-
-        }
-
-        .boder {
-            border: 2px solid black;
-        }
-
-        .list_elemtns {
-            display: flex;
-            margin: 10px;
-            align-self: flex-end;
-
-
-
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .imgbox {
-            display: flex;
-            margin: 20px;
-
-
-            width: 10%;
-            height: inherit;
-        }
-
-        .imgbox2 {
-            display: flex;
-            
-            margin: 20px;
-
-            height: 6vh;
-            width: 16vh;
-
-        }
-
-        .img {
-            height: 100%;
-            width: 100%;
-        }
-
-        .language_icon {
-            width: 4vh;
-            height: 3vh;
-        }
-
-        .downloadbox {
-            margin: 20px;
-
-            height: 40vh;
-            width: 70%;
-
-            display: flex;
-            justify-content: center;
-            justify-self: center;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -126,14 +32,29 @@
         </nav>
     </header>
 
-    <main>
+    <main class="boder">
         <div class="boder downloadbox">
-            Download UltraEdit for Windows
-            <div class="imgbox2">
 
-                <img src="https://cdn.prod.website-files.com/697780e9d366dbabbe353af2/698a2e39aaafc11aa08c7c8b_G2_Awards_Badge.avif"
-                    alt="G2 containing " class="img ">
+            <div class="boder haedline">
+                <h1> Download UltraEdit for Windows</h1>
+
+                <div class="imgbox2 boder "> <img
+                        src="https://cdn.prod.website-files.com/697780e9d366dbabbe353af2/698a2e39aaafc11aa08c7c8b_G2_Awards_Badge.avif"
+                        alt="G2 containing " class="img ">
+                </div>
+
+
             </div>
+
+            <div class="textbox boder">
+
+                <p>Download and try UltraEdit before you buy it! This download includes the full Windows
+                    <br> version of the text editor.
+                </p>
+            </div>
+
+            <div class="button boder"><button>DOWNLOAD MAC OR LINUX VERSION</button></div>
+
         </div>
     </main>
 
