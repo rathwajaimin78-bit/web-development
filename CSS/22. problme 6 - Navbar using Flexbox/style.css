@@ -4,9 +4,9 @@
         }
 
         .navbar {
-            margin: 60px;
+            margin: 60px 20px 20px 20px;
             padding: 10px;
-            width: 80%;
+            width: 85%;
             height: 8vh;
 
             display: flex;
@@ -37,13 +37,18 @@
         }
 
         .boder {
-            border: 2px solid black;
+            /* border: 2px solid black; */
+            flex-wrap: wrap;
+            gap: 10px;
+
+            
         }
 
         .list_elemtns {
             display: flex;
             margin: 10px;
             align-self: flex-end;
+            justify-self: center;
 
 
 
@@ -60,7 +65,7 @@
 
 
             width: 10%;
-            height: inherit;
+            height: 70%;
         }
 
         .imgbox2 {
@@ -99,7 +104,7 @@
         }
 
         .textbox {
-            width: auto;
+            width: 43vw;
             height: 5vh;
             padding: 10px;
             display: flex;
@@ -128,7 +133,7 @@
 
             padding: 10px;
             height: 10vh;
-            width: 30vw;
+            width: 48vw;
 
             justify-self: center;
             align-self: center;
@@ -136,20 +141,20 @@
             align-items: center;
         }
 
-        .button {
-            .read_div {
-                margin: 10vh;
-                display: flex;
-                justify-self: center;
-                justify-content: center;
-                border-radius: 2rem;
-                width: 10vw;
+        /* .button {
+        } */
+        .read_div {
+            margin: 10vh;
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            border-radius: 2rem;
+            width: 10vw;
 
-                background-color: rgb(226, 238, 249);
-                color: rgb(92, 143, 238);
+            background-color: rgb(226, 238, 249);
+            color: rgb(92, 143, 238);
 
-                /* temp */
-                border: 1px solid rgba(162, 228, 242, 0.509);
+            /* temp */
+            border: 1px solid rgba(162, 228, 242, 0.509);
 
-            }
         }
