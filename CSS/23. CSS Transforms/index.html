@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .boder{
+            border: 2px solid black;
+            width: 70px;
+            height: 70px;
+            background-color: burlywood ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform propertys */
+            transform: rotate(0.25turn); 
+            transform: rotate(7deg);
+            /* transform: skew(55deg); */
+
+            /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+            transform-origin : 30% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="boder">box</div>
+</body>
+</html>
