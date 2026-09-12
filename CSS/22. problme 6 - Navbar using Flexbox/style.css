@@ -4,7 +4,7 @@
         }
 
         .navbar {
-            margin: 60px 20px 20px 20px;
+            margin: 30px 20px 20px 20px;
             padding: 10px;
             width: 85%;
             height: 8vh;
@@ -48,6 +48,9 @@
             display: flex;
             margin: 10px;
             align-self: flex-end;
+            justify-self: center;
+
+            align-items: center;
             justify-self: center;
 
 
@@ -157,4 +160,11 @@
             /* temp */
             border: 1px solid rgba(162, 228, 242, 0.509);
 
+        }
+
+        li img {
+            height: 14px;
+            width: 14px;
+
+          
         }
