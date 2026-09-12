@@ -3,6 +3,10 @@
             padding: 0;
         }
 
+        :root {
+            --blue: rgb(92, 143, 238);
+        }
+
         .navbar {
             margin: 30px 20px 20px 20px;
             padding: 10px;
@@ -37,11 +41,11 @@
         }
 
         .boder {
-            /* border: 2px solid black; */
+            border: 2px solid black;
             flex-wrap: wrap;
             gap: 10px;
 
-            
+
         }
 
         .list_elemtns {
@@ -93,10 +97,11 @@
 
         .downloadbox {
             margin: 20px;
+            margin-bottom: 0px;
             padding: 20px;
 
             height: 40vh;
-            width: 70%;
+            width: 80%;
 
             display: flex;
 
@@ -113,13 +118,18 @@
             display: flex;
             /* flex-direction: ; */
             align-self: center;
-            justify-self: center;
+            justify-content: center;
+            font-family: system-ui;
+            font-size: medium;
+            text-align: center;
         }
 
         main {
             display: flex;
             align-self: center;
-
+            flex-direction: row;
+            width: 100%;
+            height: 90vh;
 
             justify-content: center;
         }
@@ -155,7 +165,7 @@
             width: 10vw;
 
             background-color: rgb(226, 238, 249);
-            color: rgb(92, 143, 238);
+            color: var(--blue);
 
             /* temp */
             border: 1px solid rgba(162, 228, 242, 0.509);
@@ -166,5 +176,84 @@
             height: 14px;
             width: 14px;
 
-          cursor: pointer;
+            cursor: pointer;
+        }
+
+        .button {
+            display: flex;
+            align-self: center;
+
+
+            height: 5vh;
+            width: 18vw;
+
+            border-radius: 0.5rem;
+        }
+
+        .button button {
+            background-color: rgb(92, 143, 238);
+            color: whitesmoke;
+
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+
+            font-family: sans-serif;
+
+        }
+
+        .version {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+
+
+            height: auto;
+            width: 80%;
+        }
+
+        .UE {
+            display: flex;
+            height: 8vh;
+            width: 60%;
+            align-items: center;
+        }
+
+        .icon2 {
+            display: flex;
+
+            height: 5vh;
+            width: 3vw;
+
+            border-radius: 0.5rem;
+
+
+
+        }
+
+        .icon2 img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+
+        .text {
+            display: flex;
+            font-family: revert-layer;
+            font-size: large;
+        }
+
+        .c {
+            padding: 20px;
+            height: auto;
+            width: 90%;
+            align-self: center;
+
+            display: grid;
+        }
+
+        .box{
+            height: 10vh;
+            width: 20vw;
         }
