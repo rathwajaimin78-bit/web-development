@@ -11,7 +11,7 @@
             margin: 30px 20px 20px 20px;
             padding: 10px;
             width: 85%;
-            /* height: 8vh; */
+
             height: 45%;
 
             display: flex;
@@ -21,7 +21,7 @@
             justify-content: space-between;
 
             border-radius: 1rem;
-            /* justify-items:right; */
+            justify-items: right;
             flex-wrap: wrap;
         }
 
@@ -45,7 +45,7 @@
 
         .boder {
             /* for development allways use borders */
-            border: 2px solid black;
+            /* border: 2px solid black; */
             flex-wrap: wrap;
             gap: 1vh;
 
