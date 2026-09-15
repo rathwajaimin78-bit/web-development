@@ -37,13 +37,14 @@
             justify-items: center;
             justify-content: flex-end;
 
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
 
 
 
         }
 
         .boder {
+            /* for development allways use borders */
             border: 2px solid black;
             flex-wrap: wrap;
             gap: 1vh;
@@ -100,7 +101,7 @@
 
         .iconbox {
             height: 3%;
-            width: 4%;
+            width: 3%;
         }
 
         .downloadbox {
@@ -247,8 +248,8 @@
         .icon2 {
             display: flex;
 
-            height: 5vh;
-            width: 3vw;
+            height: 75%;
+            width: 6%;
 
             border-radius: 0.5rem;
 
@@ -266,6 +267,7 @@
             display: flex;
             font-family: revert-layer;
             font-size: large;
+            flex-wrap: wrap;
         }
 
         .c {
@@ -285,7 +287,7 @@
 
         /* genaral card class */
         .card {
-            padding: 5px;
+            padding: 5%;
             height: 20vh;
             width: 20vw;
             gap: 50px;
@@ -307,7 +309,7 @@
 
 
             justify-content: center;
-            padding: 4px;
+            padding: 4%;
 
             background-color: #f9f9f9;
 
@@ -423,4 +425,97 @@
             width: auto;
             grid-row: 4/5;
             grid-column: 1/2;
+        }
+
+        @media only screen and (max-width : 1225px) {
+            .c {
+                grid-template-areas: "box1"
+                    "box2"
+                    "box3"
+                    "box4"
+                    "box5"
+                    "box6"
+                    "box7"
+                    "box8"
+                    "box9"
+                    "box10";
+            }
+
+            .card1 {
+                grid-area: box1;
+                grid-row: 1/2;
+                grid-column: 1/2;
+            }
+
+            .card2 {
+                grid-area: box2;
+                grid-row: 2/3;
+                grid-column: 1/2;
+            }
+
+            .card3 {
+                grid-area: box3;
+                height: auto;
+                width: auto;
+                grid-row: 3/4;
+                grid-column: 1/2;
+            }
+
+            .card4 {
+                grid-area: box4;
+                grid-row: 4/5;
+                grid-column: 1/2;
+            }
+
+            .card5 {
+                grid-area: box5;
+                grid-row: 5/6;
+                grid-column: 1/2;
+            }
+
+            .card6 {
+                grid-area: box6;
+                grid-row: 6/7;
+                grid-column: 1/2;
+            }
+
+            .card7 {
+                grid-area: box7;
+                grid-row: 7/8;
+                grid-column: 1/2;
+            }
+
+            .card8 {
+                grid-area: box8;
+                grid-row: 8/9;
+                grid-column: 1/2;
+            }
+
+            .card9 {
+                grid-area: box9;
+                grid-row: 9/10;
+                grid-column: 1/2;
+            }
+
+            .card10 {
+                grid-area: box10;
+                grid-row: 10/11;
+                grid-column: 1/2;
+            }
+        }
+
+        footer {
+            display: flex;
+            margin-top: 1%;
+            padding: 1%;
+            width: inherit;
+            height: 30%;
+
+            justify-content: right;
+            font-family: sans-serif;
+            font-weight: 500;
+
+            background-color: #0D1117;
+            color: whitesmoke;
+
         }
