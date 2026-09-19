@@ -13,21 +13,29 @@
             margin: 10px;
             padding: 10px;
 
+            display: flex;
+            gap: 10px;
+
         }
 
         .box {
             background-color: red;
-            height: 7vh;
-            width: 8vw;
+            height: 2vh;
+            width: 2vw;
+
+            animation-name: loading;
+            animation-duration: 1.5s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
 
         }
 
-        @keyframes  loading {
-            form{
+        @keyframes loading {
+            form {}
 
-            }
-            to{
-                transform: translatex(7vw);
+            to {
+                transform: translatex(1000px);
+                /* translate: scaleX(1); */
             }
         }
     </style>
@@ -36,7 +44,13 @@
 <body>
     <div class="container">
 
-        <div class="box translate">
+        <div class="box ">
+
+        </div>
+        <div class="box ">
+
+        </div>
+        <div class="box ">
 
         </div>
     </div>
