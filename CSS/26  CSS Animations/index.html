@@ -14,28 +14,42 @@
             padding: 10px;
 
             display: flex;
+            align-items: center;
             gap: 10px;
 
         }
 
         .box {
-            background-color: red;
-            height: 2vh;
+            background-color: rgb(24, 23, 23);
+            height: 3vh;
             width: 2vw;
+            border-radius: 100%;
 
             animation-name: loading;
             animation-duration: 1.5s;
             animation-iteration-count: 3;
             animation-timing-function: ease-out;
+            animation-direction: alternate;
+            /* animation-play-state: paused; */
+
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: loading 1.5s ease-out  3 alternate ; */
+
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: backwards  ; */
 
         }
 
         @keyframes loading {
-            form {}
+            form {
+                background-color: rgb(0, 0, 0);
+            }
 
             to {
                 transform: translatex(1000px);
                 /* translate: scaleX(1); */
+                background-color: rgb(146, 149, 150);
             }
         }
     </style>
