@@ -146,6 +146,7 @@
         h1 {
             display: flex;
             justify-self: center;
+            font-weight: 400;
             height: 10%;
             flex-wrap: nowrap;
         }
@@ -178,7 +179,7 @@
             color: var(--blue);
 
             /* temp */
-            border: 1px solid rgba(162, 228, 242, 0.509);
+            /* border: 1px solid rgba(162, 228, 242, 0.509); */
 
         }
 
@@ -193,7 +194,7 @@
         .button {
             display: flex;
             align-self: center;
-
+            font-weight: 500;
 
             height: 5vh;
             width: 30%;
@@ -205,6 +206,7 @@
             background-color: #05a9bd;
 
             color: whitesmoke;
+
 
             height: 100%;
             width: 100%;
@@ -230,6 +232,7 @@
         .version {
             display: flex;
             justify-content: center;
+            align-self: center;
             flex-direction: column;
             padding: 10px;
 
@@ -266,6 +269,7 @@
         .text {
             display: flex;
             font-family: revert-layer;
+
             font-size: large;
             flex-wrap: wrap;
         }
@@ -289,10 +293,11 @@
         .card {
             padding: 5%;
             height: 20vh;
-            width: 20vw;
+            max-width: 20vw;
             gap: 50px;
 
             display: flex;
+
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -306,6 +311,7 @@
         .download_button {
             display: flex;
             align-items: center;
+            flex-wrap: nowrap;
 
 
             justify-content: center;
@@ -325,6 +331,7 @@
             height: 40%;
             width: 50%;
             border-radius: 0.5rem;
+            border: none;
             color: #f9f9f9;
 
 
@@ -333,6 +340,8 @@
 
         .text2 {
             height: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 650;
         }
 
         .color_32 {
@@ -501,6 +510,10 @@
                 grid-area: box10;
                 grid-row: 10/11;
                 grid-column: 1/2;
+            }
+
+            .download_button {
+                flex-wrap: wrap;
             }
         }
 
