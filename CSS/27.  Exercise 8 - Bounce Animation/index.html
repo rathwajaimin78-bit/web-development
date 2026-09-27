@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Bounce Animation</title>
+
+    <style>
+        main {
+            background-color: rgb(255, 237, 237);
+            height: 70vh;
+            width: 80%;
+        }
+
+        .ball {
+            background-color: blueviolet;
+            border-radius: 50%;
+            height: 22vh;
+            width: 22vh;
+
+
+            animation-name: position;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.6, 0.15, 0.58, 1);
+            animation-fill-mode:forwards;
+            transform: translatey(0px);
+
+
+
+            /* animation-name: aspect;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.6, 0.15, 0.58, 1);
+            animation-fill-mode: backwards;*/
+
+
+
+
+        }
+
+        @keyframes position {
+            0% {
+                transform: translatey(0px);
+            }
+
+            25% {
+                transform: translatey(500px);
+                /* transform: translatex(100px); */
+                
+            }
+
+            50% {
+               transform: translatey(10px);
+               transform: translatex(100px);
+            }
+            65% {
+               transform: translatey(500px);
+               transform: translatex(200px);
+            }
+            75% {
+               transform: translatey(50px);
+               transform: translatex(300px);
+            }
+            
+            100% {
+               transform: translatey(500px);    
+               transform: translatex(400px);
+            }
+
+
+        }
+
+        /* @keyframes aspect {
+
+           0%{ transform: translatey(550px);}
+           10%{ transform: scaleY(0.1);}
+
+        } */
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="ball">
+
+        </div>
+    </main>
+</body>
+
+</html>
