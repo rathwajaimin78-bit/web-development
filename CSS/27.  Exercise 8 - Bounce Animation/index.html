@@ -23,18 +23,9 @@
             animation-name: position;
             animation-duration: 5s;
             animation-iteration-count: 1;
-            animation-timing-function: cubic-bezier(0.6, 0.15, 0.58, 1);
-            animation-fill-mode:forwards;
-            transform: translatey(0px);
-
-
-
-            /* animation-name: aspect;
-            animation-duration: 3s;
-            animation-iteration-count: 1;
-            animation-timing-function: cubic-bezier(0.6, 0.15, 0.58, 1);
-            animation-fill-mode: backwards;*/
-
+            animation-timing-function: cubic-bezier(0.63, 0.28, 0.57, 0.92);
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
 
 
 
@@ -45,28 +36,36 @@
                 transform: translatey(0px);
             }
 
-            25% {
-                transform: translatey(500px);
-                /* transform: translatex(100px); */
-                
+            20% {
+                transform: translatey(500px) translatex(100px) scaleY(0.5);
+
+
             }
 
-            50% {
-               transform: translatey(10px);
-               transform: translatex(100px);
+            40% {
+                transform: translatey(0px) translatex(200px) scaleY(1);
+
             }
-            65% {
-               transform: translatey(500px);
-               transform: translatex(200px);
+
+            60% {
+                transform: translatey(500px) translatex(300px) scaleY(0.4);
+
             }
-            75% {
-               transform: translatey(50px);
-               transform: translatex(300px);
+
+            80% {
+                transform: translatey(50px) translatex(400px) scaleY(0.99);
+
             }
-            
+
+            95% {
+                transform: translatey(500px) translatex(500px) scaleY(0.2);
+
+            }
+
             100% {
-               transform: translatey(500px);    
-               transform: translatex(400px);
+                transform:  translatey(500px) translatex(500px) scaleY(0.998);
+
+
             }
 
 
