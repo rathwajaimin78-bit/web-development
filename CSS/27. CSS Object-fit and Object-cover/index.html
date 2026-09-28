@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+
+    <style>
+        .box{
+            display: flex;
+            align-self: center;
+            justify-self: center;
+
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: bisque;
+
+            height: 1000px;
+            width: 1000px;
+
+            /* CSS Object-fit and Object-cover use to set img and bakground img */
+            object-fit: contain;
+            background-position: center center;
+
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg);
+
+            background-repeat: no-repeat;
+        }
+
+        img{
+            width: 1000px;
+            height: 1000px;
+
+            /* object-fit: fill; */
+            object-fit: cover;  
+            
+
+            
+            /* object-fit: scale-down; */
+            /* object-position: bottom right; */
+            /* object-position: 10% 10%; */
+
+            /* object-fit: fill; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg" alt="strobarry"> -->
+        <h1>text</h1>
+    </div>
+</body>
+</html>
