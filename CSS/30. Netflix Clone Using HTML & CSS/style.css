@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 80vh;
+
+    background-image: url("assets/imgs/bg.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+/* tampry */
+/* div span {
+    border: 2px solid black;
+} */
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+
+nav {
+    padding: 10px;
+    margin: auto;
+    height: auto;
+    max-width: 80vw;
+
+    /* tampery  */
+    /* background-color: white; */
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.logo {
+    height: 10vh;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+nav .button {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    gap: 10px;
+    height: 80%;
+    width: 20%;
+}
+
+nav .button button {
+    width: 25%;
+    height: 60%;
+
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: red;
+
+    position: relative;
+    z-index: 1;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    
+
+    color: white;
+    height: 100%;
+}
