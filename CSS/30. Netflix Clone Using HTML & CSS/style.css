@@ -30,7 +30,7 @@
 nav {
     padding: 10px;
     margin: auto;
-    height: auto;
+    height: 10%;
     max-width: 80vw;
 
     /* tampery  */
@@ -81,17 +81,96 @@ nav .button button {
 
     position: relative;
     z-index: 1;
-    
+
 }
-.hero{
+
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+    gap: 25px;
+
     position: relative;
-    
+    z-index: 1;
+
 
     color: white;
     height: 100%;
+}
+
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
+}
+
+.email_box {
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+
+    max-width: 20vw;
+    height: auto;
+
+
+}
+
+.red_button {
+    max-width: 8vw;
+    height: 3.5vh;
+
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: red;
+
+    font-family: monospace;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 8px 1px 8px;
+}
+
+
+.email {
+    background-color: black;
+    position: relative;
+    border: none;
+    height: 3vh;
+    width: 10vw;
+    color: white;
+
+    padding: 2px;
+    font-size: 15px;
+
+    border-radius: 0.4rem;
+
+}
+
+.separation {
+    background-color: rgb(61, 60, 60);
+    height: 1vh;
+    width: 100%;
+    position: relative;
+    top: -115px;
+
 }
