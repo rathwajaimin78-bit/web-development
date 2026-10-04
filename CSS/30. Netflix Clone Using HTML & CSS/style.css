@@ -252,7 +252,9 @@ nav .button button {
     right: 80px;
     top: 100px;
     object-fit: contain;
-    width: inherit;
+    width: 555px;
+
+
     overflow: clip;
 
     z-index: -1;
@@ -261,11 +263,33 @@ nav .button button {
 
 }
 
+.img {
+    position: relative;
+
+    object-fit: contain;
+    width: 555px;
+
+
+
+    overflow: clip;
+
+    z-index: 2;
+
+
+
+}
+
+img {
+    overflow-clip-margin: content-box;
+}
+
 
 .section {
-    height: 50vh;
+    /* height: 50vh; */
+    height: auto;
+    padding: 20px;
 
-    width: 100%;
+    width: inherit;
     background-color: black;
     color: white;
 
@@ -278,23 +302,208 @@ nav .button button {
 
 .FNQ_box {
     background-color: rgb(61, 60, 60);
-    height: 8vh;
+    height: 5vh;
     width: 60%;
     padding: 20px;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
-}
-.FNQ_box > :first-child{
-    margin-top: 80px;
-}
-.FNQ_box :nth-child(4){
-    margin-bottom: 80px;
+    justify-content: space-between;
 }
 
-/* .FNQ_box > img{
-    width: 20%;
+
+.FNQ_box>img {
+    width: 10%;
     height: 20%;
-    
-} */
 
+}
+
+.Questions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    animation: width 2s ease-out 1s 1 forwards forwards;
+
+
+}
+
+
+.footer {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-areas: "box1" "box2" "box3" "box4"
+        "box5" "box6" "box7" "box8"
+        "box9" "box10" "box11" "box12"
+        "box13" "box14" "box15" "box16";
+
+    row-gap: 1vw;
+
+    justify-content: space-evenly;
+}
+
+@keyframes width {
+    0%{
+        transform: scalex(60%);
+    }
+    100%{
+        transform: scalex(50%);
+    }
+}
+
+
+
+/* grid itmes */
+.box1 {
+    grid-area: box1;
+    height: auto;
+    width: auto;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+
+.box2 {
+    grid-area: box2;
+    height: auto;
+    width: auto;
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.box3 {
+    grid-area: box3;
+    height: auto;
+    width: auto;
+
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.box4 {
+    grid-area: box4;
+    height: auto;
+    width: auto;
+
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+
+.box5 {
+    grid-area: box5;
+    height: auto;
+    width: auto;
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.box6 {
+    grid-area: box6;
+    height: auto;
+    width: auto;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.box7 {
+    grid-area: box7;
+    height: auto;
+    width: auto;
+
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.box8 {
+    grid-area: box8;
+    height: auto;
+    width: auto;
+
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+
+.box9 {
+    grid-area: box9;
+    height: auto;
+    width: auto;
+
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.box10 {
+    grid-area: box10;
+    height: auto;
+    width: auto;
+
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.box11 {
+    grid-area: box11;
+    height: auto;
+    width: auto;
+
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.box12 {
+    grid-area: box12;
+    height: auto;
+    width: auto;
+
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+
+
+.box13 {
+    grid-area: box13;
+    height: auto;
+    width: auto;
+
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+.box14 {
+    grid-area: box14;
+    height: auto;
+    width: auto;
+
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.box15 {
+    grid-area: box15;
+    height: auto;
+    width: auto;
+
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+.box16 {
+    grid-area: box16;
+    height: auto;
+    width: auto;
+
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
