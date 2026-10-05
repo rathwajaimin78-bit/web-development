@@ -139,7 +139,7 @@ nav .button button {
 
     border: 1px solid white;
     border-radius: 0.5rem;
-    color: white;
+    color: hsl(0, 0%, 100%);
     background-color: red;
 
     font-family: monospace;
@@ -177,32 +177,34 @@ nav .button button {
 
 }
 
-.right_section {
+.main_section {
     height: 50vh;
-    width: 100%;
+    margin: auto;
+    padding: 30px;
+    max-width: 100%;
     background-color: black;
     color: white;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+
+}
+
+.right_section {
+
+    flex-direction: row;
+
 
 }
 
 .left_section {
-    height: 50vh;
 
-    width: 100%;
-    background-color: black;
-    color: #ffffff;
-
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
 
 }
 
@@ -212,6 +214,10 @@ nav .button button {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    overflow: auto;
+
+    max-width: 70vw;
+
 }
 
 
@@ -229,8 +235,7 @@ nav .button button {
     font-size: 24px;
     font-weight: 500;
     font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
-    flex-wrap: wrap;
-
+    overflow-wrap: break-word
 }
 
 .side_show {
@@ -281,6 +286,7 @@ nav .button button {
 
 img {
     overflow-clip-margin: content-box;
+
 }
 
 
@@ -347,10 +353,11 @@ img {
 }
 
 @keyframes width {
-    0%{
+    0% {
         transform: scalex(60%);
     }
-    100%{
+
+    100% {
         transform: scalex(50%);
     }
 }
@@ -506,4 +513,24 @@ img {
 
     grid-row: 4/5;
     grid-column: 4/5;
+}
+
+
+
+@media only screen and (max-width : 1300px) {
+    .img {
+        width: 305px;
+        
+    }
+
+    .tv {
+        width: 305px;
+        
+    }
+    .main_section{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
 }
