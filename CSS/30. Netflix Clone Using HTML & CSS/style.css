@@ -7,7 +7,7 @@
 .main {
     height: 80vh;
 
-    background-image: url("assets/imgs/bg.jpg");
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/f0b42cac-9ced-425f-8677-777eadbdbe2f/web/IN-en-20261005-TRIFECTA-perspective_14c6dcd8-c058-4841-a0e5-1d0d70b35836_large.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-size: max(1490px, 100vw);
@@ -116,19 +116,19 @@ nav .button button {
 }
 
 .hero> :first-child {
-    font-size: 18px;
+    font-size: 48px;
     font-weight: bolder;
     font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
 }
 
 .hero> :nth-child(2) {
-    font-size: 15px;
+    font-size: 24px;
     font-weight: 400;
     font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
 }
 
 .hero> :nth-child(3) {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 400;
     font-family: 'Segoe UI', "Helvetica Neue", Roboto, ubuntu, sans-serif;
 }
@@ -549,6 +549,18 @@ nav .button button {
         flex-wrap: wrap;
     }
 
+    .hero> :first-child {
+    font-size: 18px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 15px;
+}
+
+.hero> :nth-child(3) {
+    font-size: 13px;
+}
+
 
     .tv {
         width: 231px;
@@ -661,3 +673,13 @@ nav .button button {
 
 
 }
+
+.right{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+    color: rgb(109, 109, 109);
+}
+
+/* completed */
