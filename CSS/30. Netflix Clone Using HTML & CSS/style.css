@@ -63,7 +63,7 @@ nav {
     z-index: 1;
 }
 
- nav img {
+nav img {
     height: 100%;
     width: 100%;
 
@@ -143,14 +143,14 @@ nav .button button {
     flex-direction: row;
     gap: 10px;
 
-    max-width: 20vw;
+    max-width: max-content;
     height: auto;
 
 
 }
 
 .red_button {
-    max-width: 15vw;
+    max-width: 1500px;
     height: 4vh;
 
     border: none;
@@ -174,7 +174,7 @@ nav .button button {
     position: relative;
     border: none;
     height: 4vh;
-    width: 12vw;
+    width: 330px;
     color: white;
 
     padding: 2px;
@@ -320,22 +320,31 @@ nav .button button {
     gap: 40px;
 }
 
+.fnq{
+    height: 100%;
+    width:100%;
+}
+
 .FNQ_box {
     background-color: rgb(61, 60, 60);
-    height: 5vh;
-    width: 60%;
+    max-width: 60vw;
     padding: 20px;
+    margin: 12px auto;
 
     display: flex;
-    flex-direction: row;
-    align-items: center;
+
     justify-content: space-between;
+    align-items: center;
+
+
+    transition: all 1s ease-out;
 }
 
 
-.FNQ_box>img {
-    width: 4%;
-    height: 30%;
+
+.FNQ_box >img {
+    width: 20x;
+    height: 20px;
 
 }
 
@@ -345,7 +354,6 @@ nav .button button {
     align-items: flex-start;
     justify-content: flex-start;
 
-    animation: width 2s ease-out 1s 1 forwards forwards;
 
 
 }
@@ -369,15 +377,7 @@ nav .button button {
     justify-content: space-evenly;
 }
 
-@keyframes width {
-    0% {
-        transform: scalex(60%);
-    }
 
-    100% {
-        transform: scalex(50%);
-    }
-}
 
 
 
@@ -539,12 +539,13 @@ nav .button button {
         width: 305px;
 
     }
-    .side_show  img {
+
+    .side_show img {
         width: 305px;
 
     }
 
-    nav .button{
+    nav .button {
         flex-wrap: wrap;
     }
 
@@ -584,6 +585,10 @@ nav .button button {
     .footer {
         grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8";
         grid-template-areas: "box9" "box10" "box11" "box12" "box13" "box14" "box15" "box16";
+    }
+
+    .email{
+        width: 100px;
     }
 
     .box5 {
