@@ -1,17 +1,15 @@
-for (let i = 1; i <= 5; i++) {
-    let random = Math.random();
-    let box = document.getElementById(`box${i}`);
+// to get random number in range use (low random*(high - low))
+function getrandomcolur() {
+    let red = Math.ceil(0 + (Math.random()) * 255)
+    let green = Math.ceil(0 + (Math.random()) * 255)
+    let blue = Math.ceil(0 + (Math.random()) * 255)
 
-    if (random <= 0.33) {
-        box.style.backgroundColor = "red";
-        box.style.color = "blue";
-    }
-    else if (random <= 0.66) {
-        box.style.backgroundColor = "blue";
-        box.style.color = "red";
-    }
-    else {
-        box.style.backgroundColor = "green";
-        box.style.color = "red";
-    }
+    return `rgb(${red}, ${green}, ${blue})`
 }
+
+let boxes = document.getElementsByClassName("box")
+
+Array.from(boxes).forEach(e => {
+    e.style.backgroundColor = getrandomcolur()
+    e.style.color = getrandomcolur()
+});
