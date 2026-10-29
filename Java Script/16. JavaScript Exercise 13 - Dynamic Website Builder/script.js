@@ -1,4 +1,4 @@
-function createcard(title, cname, views, months, img_url , durtion) {
+function createcard(title, cname, views, months, img_url, durtion) {
 
     let t = document.querySelector(".title")
     t.innerHTML = title
@@ -9,12 +9,16 @@ function createcard(title, cname, views, months, img_url , durtion) {
     console.log(c)
 
     let v = document.querySelector(".views")
-    if (Math.trunc(views % 10000) == 0) {
-        views = Math.trunc(views/10000)
+    if (views >= 1000000) {
+        views = Math.trunc(views / 1000000)
         v.innerHTML = `${views}M  views`
     }
-    else if (Math.trunc(views % 1000) == 0) {
-        views = Math.trunc(views/1000)
+    else if (views >= 10000) {
+        views = Math.trunc(views / 1000)
+        v.innerHTML = `${views}K  views`
+    }
+    else if (views >= 1000) {
+        views = Math.trunc(views / 1000)
         v.innerHTML = `${views}K  views`
     }
     else {
@@ -43,4 +47,4 @@ let views = parseInt(prompt("enter number of views :"))
 let months = parseInt(prompt("enter number of month publish :"))
 let img = (prompt("enter thumbnail url :"))
 
-createcard(title, cname, views, months, img , durtion)
+createcard(title, cname, views, months, img, durtion)
