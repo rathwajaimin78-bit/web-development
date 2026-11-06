@@ -25,3 +25,9 @@ function loadscript(src, callback) {
 }
 
 loadscript("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js", callback)
+
+// callback functionis hard to manage
+
+
+//  Promise
+
