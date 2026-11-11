@@ -40,11 +40,18 @@ function createcard(title, cname, views, months, img_url, durtion) {
     console.log(d)
 }
 
-let title = prompt("enter video title :")
-let cname = prompt("enter channel-name :")
-let durtion = prompt("enter durtion of video :")
-let views = parseInt(prompt("enter number of views :"))
-let months = parseInt(prompt("enter number of month publish :"))
-let img = (prompt("enter thumbnail url :"))
 
-createcard(title, cname, views, months, img, durtion)
+const button = document.getElementById("button")
+
+button.addEventListener('click', () => {
+
+
+    let title = document.getElementById("title").value
+    let cname = document.getElementById("cname").value
+    let durtion = document.getElementById("durtion").value
+    let views = document.getElementById("views").value
+    let months = document.getElementById("months").value
+    let img = document.getElementById("img").value
+
+    createcard(title, cname, views, months, img, durtion)
+})
