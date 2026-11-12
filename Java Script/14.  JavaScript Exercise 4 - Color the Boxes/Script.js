@@ -1,4 +1,4 @@
-// to get random number in range use (low random*(high - low))
+// to get random number in range use (low + random*(high - low))
 function getrandomcolur() {
     let red = Math.ceil(0 + (Math.random()) * 255)
     let green = Math.ceil(0 + (Math.random()) * 255)
