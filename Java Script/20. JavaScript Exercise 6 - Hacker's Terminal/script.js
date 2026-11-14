@@ -11,7 +11,7 @@ function blinking_dots(element) {
 
         element.innerText = ".".repeat(dots);
 
-    }, 500);
+    }, 400);
 
     return interval;
 }
@@ -64,6 +64,7 @@ async function main() {
     let command3 = "Password files Detected "
     let command4 = "Sending all passwords and personal files to server "
     let command5 = "Cleaning up "
+    let command6 = "Done "
 
 
     await print_commands(command1)
@@ -71,6 +72,7 @@ async function main() {
     await print_commands(command3)
     await print_commands(command4)
     await print_commands(command5)
+    await print_commands(command6)
 
 
 
