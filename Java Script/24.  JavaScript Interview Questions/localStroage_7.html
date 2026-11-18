@@ -1,0 +1,80 @@
+<!--  The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNote ToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local stroage </title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            width: 99%;
+            height: 97vh;
+
+        }
+
+
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: #4a148c;
+            color: white;
+            border-radius: 0.5rem;
+            border: 0px;
+        }
+
+        .note {
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: wheat;
+            border-radius: 2rem;
+            padding: 20px;
+
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button>click here to see note</button>
+
+    <div class="note"></div>
+
+
+    <script>
+
+        function saveNoteTolocalStroage(note) {
+            localStorage.setItem("note", note);
+        }
+
+        let note = localStorage.getItem("note")
+        document.querySelector(".note").innerHTML = note;
+
+        document.querySelector("button").addEventListener("click", () => {
+
+            let note = prompt("Enter your note");
+            saveNoteTolocalStroage(note)
+            document.querySelector(".note").innerHTML = note;
+
+        })
+
+
+    </script>
+</body>
+
+</html>

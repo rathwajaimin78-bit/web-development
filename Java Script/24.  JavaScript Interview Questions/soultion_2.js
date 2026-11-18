@@ -8,8 +8,10 @@ console.log(array);
 
 for (let i = 0; i < array.length; i++) {
     const element = array[i];
-    if (element != array[i - 1] || element != array[i + 1]) {
+    if (element != array[i - 1] && element != array[i + 1]) {
         new_array.push(element)
+        new_array.push(element)
+    }else{
         new_array.push(element)
     }
 }
